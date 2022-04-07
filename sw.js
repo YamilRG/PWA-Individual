@@ -12,7 +12,7 @@ const APP_SHEll = [
     'img/Debian3.png', 
     'img/Debian4.png',
     'js/app.js',
-    'js/sw-acces.js'];
+    'js/sw-acces.js']; 
 
 import('/js/sw-acces.js');
 const APP_IMMUTABLE = [
