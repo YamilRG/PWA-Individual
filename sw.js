@@ -52,3 +52,27 @@ self.addEventListener('activate', event => {
 });
 
 //Estrategia de Cache
+
+self.addEventListener('fetch', event => {
+    const respuestaFullback = caches.match(event.request).then(respuesta => {
+        if (respuesta) return respuesta;
+        console.log("No existe, error de red");
+
+        fetch(event.respuesta).then(newRespuesta => {
+            caches.open(DYNAMIC_CACHE).then(cache =>{
+                cache.put(event.request, newRespuesta);
+
+            });
+            return newRespuesta.clone();
+
+        }).catch(error => {
+            console.log("catch fetch");
+            if(event.request.headers.get('accept').includes('text/html')){
+                return caches.match('/pages/no-response.html');
+            }
+
+        });
+
+    });
+    event.respondWith(respuestaFullback);
+});
