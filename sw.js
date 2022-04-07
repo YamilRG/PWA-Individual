@@ -25,9 +25,9 @@ self.addEventListener('install', event => {
         cache.addAll(APP_IMMUTABLE);
     });
     event.waitUntil(Promise.all([cacheStatic, cacheInm]));
-    importScripts('js/sw-acces.js')
+    
 });
-
+importScripts('js/sw-acces.js');
 
 //Activacion
 
