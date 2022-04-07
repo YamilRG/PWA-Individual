@@ -18,14 +18,13 @@ importScripts('js/sw-acces.js')
 //Instalacion
 
 self.addEventListener('install', event => {
-    const cacheStatic =  caches.open(STATIC_CACHE).then(cache => {
+    const cacheStatic = caches.open(STATIC_CACHE).then(cache => {
         cache.addAll(APP_SHEll);
     });
-    const cacheInmutable =  caches.open(INMUTABLE_CACHE).then(cache => {
+    const cacheInm  =caches.open(INMUTABLE_CACHE).then(cache => {
         cache.addAll(APP_IMMUTABLE);
     });
-
-    event.waitUntil(Promise.all([cacheStatic, cacheInmutable]));
+    event.waitUntil(Promise.all([cacheStatic, cacheInm]));
 });
 
 
