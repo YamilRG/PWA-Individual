@@ -6,7 +6,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "icons": [{
-        "src": "/img/icons/github.png",
+        "src": "img/icons/me-gusta.png",
         "type": "image/png",
         "sizes": "512x512"
     }]

@@ -1,7 +1,7 @@
 const STATIC_CACHE = 'Cache-v1';
 const DYNAMIC_CACHE = 'Dynamic-v1';
 const INMUTABLE_CACHE = 'Inmutable-v1';
-const APP_SHEll = ['/', 'index.html', 'css/style.css', 'img/favico.ico', 'img/avs/Debian.png', 'js/app.js', 'js/sw-acces.js']; 
+const APP_SHEll = ['/', 'index.html', 'css/style.css', 'img/favicon.ico', 'img/avs/Debian.png', 'js/app.js', 'js/sw-acces.js']; 
 
 
 
