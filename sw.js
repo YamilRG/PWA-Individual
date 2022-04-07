@@ -18,7 +18,9 @@ const APP_IMMUTABLE = [
 
 importScripts('js/sw-acces.js');
 
-//Instalacion
+
+
+
 
 self.addEventListener('install', event => {
     const cacheStatic = caches.open(STATIC_CACHE).then(cache => {
