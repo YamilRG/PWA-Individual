@@ -24,7 +24,7 @@ const APP_IMMUTABLE = [
 'js/libs/jquery.json'];
 
 
-
+importScripts('js/sw-acces.js')
 
 //Instalacion
 
@@ -79,4 +79,3 @@ self.addEventListener('fetch', event => {
     event.respondWith(respuestaFullback);
 });
 
-importScripts('js/sw-acces.js');
