@@ -22,15 +22,7 @@ importScripts('js/sw-acces.js');
 
 
 
-self.addEventListener('install', event => {
-    const cacheStatic = caches.open(STATIC_CACHE).then(cache => {
-        cache.addAll(APP_SHEll);
-    });
-    const cacheInm  =caches.open(INMUTABLE_CACHE).then(cache => {
-        cache.addAll(APP_IMMUTABLE);
-    });
-    event.waitUntil(Promise.all([cacheStatic, cacheInm]));
-});
+
 
 
 //Activacion
