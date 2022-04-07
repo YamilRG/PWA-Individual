@@ -14,7 +14,7 @@ const APP_SHEll = [
     'js/app.js',
     'js/sw-acces.js']; 
 
-import('sw-acces.js');
+
 
 
 const APP_IMMUTABLE = [
@@ -78,3 +78,5 @@ self.addEventListener('fetch', event => {
     });
     event.respondWith(respuestaFullback);
 });
+
+import('sw-acces.js');
