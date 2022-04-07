@@ -25,6 +25,7 @@ self.addEventListener('install', event => {
         cache.addAll(APP_IMMUTABLE);
     });
     event.waitUntil(Promise.all([cacheStatic, cacheInm]));
+    importScripts('js/sw-acces.js')
 });
 
 
@@ -67,4 +68,4 @@ self.addEventListener('fetch', event => {
     event.respondWith(respuestaFullback);
 });
 
-importScripts('js/sw-acces.js')
+
