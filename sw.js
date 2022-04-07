@@ -14,6 +14,8 @@ const APP_IMMUTABLE = [
 'https://fonts.googleapis.com/css?family=Lato:400,300',
 'https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css',
 'js/libs/jquery.js'];
+
+
 importScripts('js/sw-acces.js');
 
 //Instalacion
