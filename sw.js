@@ -5,7 +5,7 @@ const APP_SHEll = [
     './', 
     './index.html', 
     './css/style.css', 
-    './favicon.ico', 
+    './img/favicon.ico', 
     './img/avs/Debian.png', 
     './js/app.js', 
     './js/sw-acces.js']; 
