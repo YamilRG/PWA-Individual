@@ -14,7 +14,9 @@ const APP_SHEll = [
     'js/app.js',
     'js/sw-acces.js']; 
 
-import('/js/sw-acces.js');
+import('sw-acces.js');
+
+
 const APP_IMMUTABLE = [
 'https://fonts.googleapis.com/css?family=Quicksand:300,400',
 'https://fonts.googleapis.com/css?family=Lato:400,300',
