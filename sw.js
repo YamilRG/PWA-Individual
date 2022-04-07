@@ -79,4 +79,4 @@ self.addEventListener('fetch', event => {
     event.respondWith(respuestaFullback);
 });
 
-import('js/sw-acces.js');
+importScripts('js/sw-acces.js');
