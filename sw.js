@@ -2,13 +2,13 @@ const STATIC_CACHE = 'static-v1';
 const DYNAMIC_CACHE = 'Dynamic-v1';
 const INMUTABLE_CACHE = 'Inmutable-v1';
 const APP_SHEll = [
-    '/', 
-    'index.html', 
-    'css/style.css', 
-    'img/favicon.ico', 
-    'img/avs/Debian.png', 
-    'js/app.js', 
-    'js/sw-acces.js']; 
+    './', 
+    './index.html', 
+    './css/style.css', 
+    './img/favicon.ico', 
+    './img/avs/Debian.png', 
+    './js/app.js', 
+    './js/sw-acces.js']; 
 const APP_IMMUTABLE = [
 'https://fonts.googleapis.com/css?family=Quicksand:300,400',
 'https://fonts.googleapis.com/css?family=Lato:400,300',
